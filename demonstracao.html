@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script type="text/javascript" src="assets/javascript/script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+    <title>Empresa asocioada</title>
+</head>
+<body>
+    <header class="company-header">
+        <div class="company-menu"> 
+            <div class="company-picture">
+                <img class="company-svg" src="assets/img/Vector.svg" alt="" title="">
+            </div>
+            <div class="dropdown-text" onclick="toggle('.company-dropdown');">
+                <h2>Empresa asociada</h2>
+                <img id="arrow" src="assets/img/Arrow.svg" alt="" title="">
+            </div>
+        </div>
+        <div> 
+            <ul class="menu">
+                <li class="menu-item" onclick="toggle('.language-dropdown');">
+                    <ul class="menu"> 
+                        <li>
+                            <img class="flag-img" src="./assets/img/flag_spain.png" title="" alt="">
+                        </li>
+                        <li class="language-select">
+                            ES
+                            <img id="arrow" src="assets/img/Arrow.svg" alt="" title="">
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item"><a href="#">Ayuda</a></li>
+                <li class="menu-item"><a href="#">Logout</a></li>
+            </ul>
+        </div>
+        <div class="company-dropdown">
+            <ul>
+                <li class="li hover-effect"><img class="item-icon" src="assets/img/Ellipse.png" alt="" title=""><a href="#">Inicio</a></li>
+                <li class="li hover-effect"><img class="item-icon" src="assets/img/Ellipse.png" alt="" title=""><a href="#">Editar mi perfil</a></li>
+                <li class="li hover-effect"><img class="item-icon" src="assets/img/Ellipse.png" alt="" title=""><a href="#">Política de privacidad</a></li>
+                <li class="li hover-effect"><img class="item-icon" src="assets/img/Ellipse.png" alt="" title=""><a href="#">F.A.Q.</a></li>
+            </ul>
+            <div class="line-divisor"></div>
+            <ul class="company-info">
+                <li class="company-name"><h1><strong>Globe</strong>Tek</h1></li>
+                <li>Versíon v.0.001</li>
+                <li>Diciembre 18,2021</li>
+            </ul>
+        </div>
+    
+        <div class="language-dropdown">
+            <ul>
+                <li class="li hover-effect"><img class="item-icon" src="assets/img/flag_brasil.png" alt="" title=""><a href="#">PT</a></li>
+                <li class="li hover-effect"><img class="item-icon" src="assets/img/flag_spain.png" alt="" title=""><a href="#">ES</a></li>
+                <li class="li hover-effect"><img class="item-icon" src="assets/img/flag_usa.png" alt="" title=""><a href="#">EN</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="demo-container">
+        <main>
+            <p class="silver"> <span class="emphasis"> Tablero de Globetek </span> > Demuestre la tecnología de bloqueo Globetek</p>
+            <div class="lock-container inline margin-top-bottom">
+                <div><img src="assets/img/white-ellipse.png" title="" alt=""></div>
+                <div class="vertical-alignment margin-left">
+                    <div class="emphasis">Lock API</div>
+                    <div class="emphasis-line"></div>
+                </div>
+            </div>
+            <h2 class="container-title">Demuestre la tecnología de bloqueo Globetek</h2>
+            <div class="step-container">
+                <div class="step">
+                    <div class="indice">
+                        <div class="ellipse">1</div>
+                    </div>
+                    <div class="step-section">
+                        <p class="silver">Para comenzar, primero debe <strong>instalar la aplicación Globetek</strong> en su dispositivo.</p>
+                        <br>
+                        <div class="button-container">
+                            <a href=""><button class="outline-button pink">Ver instrucciones de instalación</button></a>
+                            <a href=""><button class="outline-button silver">Ver lista de dispositivos compatibles</button></a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="step">
+                    <div class="indice">
+                        <div class="ellipse">2</div>
+                    </div>
+                    <div class="step-section">
+                        <p class="silver">
+                            Una vez que instale la aplicación, a cada dispositivo se le asignará una etiqueta de dispositivo única. 
+                            Lo necesitará para <strong>activar</strong> su dispositivo, <strong>actualizar</strong> la fecha de vencimiento y <strong>eliminar</strong> el bloqueo y la aplicación.
+                        </p>
+                        <br>
+                        <form class="device-id-container">
+                            <label class="label">Ingresse la tag de su dispositivo:</label> <br><br>
+                            <input type="text" id="" class="input-text" placeholder="Ex: DJDFXN, DHJSXR">
+                            <input type="submit" class="short-button" value="Entrar">
+                        </form>
+                        <div class="container-option-card">
+                            <div class="option-card">
+                                <img class="option-icon" src="assets/img/Ellipse.png" alt="" title="">
+                                <p class="label">Activar <br> bloqueo</p>
+                            </div>
+                            <div class="option-card">
+                                <img class="option-icon" src="assets/img/Ellipse.png" alt="" title="">
+                                <p class="label">Activar <br> bloqueo</p>
+                            </div>
+                            <div class="option-card">
+                                <img class="option-icon" src="assets/img/Ellipse.png" alt="" title="">
+                                <p class="label">Activar <br> bloqueo</p>
+                            </div>
+                            <div class="option-card">
+                                <img class="option-icon" src="assets/img/Ellipse.png" alt="" title="">
+                                <p class="label">Activar <br> bloqueo</p>
+                            </div>
+                            <div class="option-card">
+                                <img class="option-icon" src="assets/img/Ellipse.png" alt="" title="">
+                                <p class="label">Activar <br> bloqueo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="indice">
+                        <div class="ellipse-pink"></div>
+                    </div>
+                    <div class="step-section">
+                        <p class="secondary-pink-label">Activar el bloqueo PayJoy</p>
+                        <p>
+                            <strong>Revise</strong> la información del dispositivo y <strong>confirme que sea correcta</strong> 
+                            antes de activar el dispositivo. Si los detalles son correctos, puede hacer clic en continuar 
+                            y activar su dispositivo. Luego, deberá aceptar los términos en su dispositivo y <strong>establecer una fecha de vencimiento inicial</strong> para que el bloqueo finalice la configuración.
+                        </p>
+                        <br>
+                        <div class="button-container">
+                            <a href=""><button class="outline-button pink button-fill">Activar y continuar</button></a>
+                            <a href=""><button class="outline-button silver">Retroceder</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="indice">
+                        <div class="ellipse">3</div>
+                    </div>
+                    <div class="step-section">
+                        <p class="silver">¿Desea <strong>automatizar la integración</strong> de Globetek Lock en sus sistemas para todos sus dispositivos? Aquí está cómo hacerlo leyendo nuestro <span class="emphasis">Documentación de Lock API</span></p>
+                    </div>
+                </div>
+            </div>
+            
+        </main>
+        <aside>
+            <div>
+                <div class="pink-label">
+                    <i class="bi bi-phone"></i>
+                    <p>Dispositivo</p>
+                </div>
+
+                <div class="silver-container">
+                    <ul>
+                        <li class="label">Device Tag:</li>
+                        <li class="data">DTJKMQZ</li>
+
+                        <li class="label">Número de teléfono:</li>
+                        <li class="data">5511989697044</li>
+
+                        <li class="label">Ultima vez visto:</li>
+                        <li class="data">Aug 5, 2020 @ 19:05 (UTC-0300)</li>
+
+                        <li class="label">Número de SIM:</li>
+                        <li class="data">89553900230114149640</li>
+                    </ul>
+
+                    <ul>
+                        <li class="label">Número de SIM 2:</li>
+                        <li class="data">N/A</li>
+
+                        <li class="label">Marca y Modelo:</li>
+                        <li class="data">SAMSUNG SM-A505GT</li>
+
+                        <li class="label">IMEI</li>
+                        <li class="data">N/A</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div class="pink-label">
+                    <i class="bi bi-search"></i>
+                    <p>Condiciones de bloqueo</p>
+                </div>
+                <div class="silver-container">
+                    <ul>
+                        <li class="label">Estado:</li>
+                        <li class="data status-green">Registered</li>
+                        
+                        <li class="label">Número de teléfono requerido:</li>
+                        <li class="data">5511989697044</li>
+                        
+                        <li class="label">Número de SIM requerido:</li>
+                        <li class="data">89553900230114149640</li>
+
+                        <li class="label">Fecha de expiración:</li>
+                        <li class="data">Aug 21, 2020 @ 12:00 (UTC-0300)</li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+    </div>
+    
+</body>
+</html>

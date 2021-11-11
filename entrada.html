@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script type="text/javascript" src="assets/javascript/script.js"></script>
+    <title>Empresa asociada</title>
+</head>
+<body>
+    <header class="company-header">
+        <div class="company-menu"> 
+            <div class="company-picture">
+                <img class="company-svg" src="assets/img/Vector.svg" alt="" title="">
+            </div>
+            <div class="dropdown-text" onclick="toggle('.company-dropdown');">
+                <h2>Empresa asociada</h2>
+                <img id="arrow" src="assets/img/Arrow.svg" alt="" title="">
+            </div>
+        </div>
+        <div> 
+            <ul class="menu">
+                <li class="menu-item" onclick="toggle('.language-dropdown');">
+                    <ul class="menu"> 
+                        <li>
+                            <img class="flag-img" src="./assets/img/flag_spain.png" title="" alt="">
+                        </li>
+                        <li class="language-select">
+                            ES
+                            <img id="arrow" src="assets/img/Arrow.svg" alt="" title="">
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item"><a href="#">Ayuda</a></li>
+                <li class="menu-item"><a href="#">Logout</a></li>
+            </ul>
+        </div>
+        <div class="company-dropdown">
+            <ul>
+                <li class="li hover-effect"><img class="item-icon" src="assets/img/Ellipse.png" alt="" title=""><a href="#">Inicio</a></li>
+                <li class="li hover-effect"><img class="item-icon" src="assets/img/Ellipse.png" alt="" title=""><a href="#">Editar mi perfil</a></li>
+                <li class="li hover-effect"><img class="item-icon" src="assets/img/Ellipse.png" alt="" title=""><a href="#">Política de privacidad</a></li>
+                <li class="li hover-effect"><img class="item-icon" src="assets/img/Ellipse.png" alt="" title=""><a href="#">F.A.Q.</a></li>
+            </ul>
+            <div class="line-divisor"></div>
+            <ul class="company-info">
+                <li class="company-name"><h1><strong>Globe</strong>Tek</h1></li>
+                <li>Versíon v.0.001</li>
+                <li>Diciembre 18,2021</li>
+            </ul>
+        </div>
+    
+        <div class="language-dropdown">
+            <ul>
+                <li class="li hover-effect"><img class="item-icon" src="assets/img/flag_brasil.png" alt="" title=""><a href="#">PT</a></li>
+                <li class="li hover-effect"><img class="item-icon" src="assets/img/flag_spain.png" alt="" title=""><a href="#">ES</a></li>
+                <li class="li hover-effect"><img class="item-icon" src="assets/img/flag_usa.png" alt="" title=""><a href="#">EN</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <div class="container">
+        <div class="container-title">
+            <h3>¿Qué libro <b class="bold">estás leyendo</b> ?
+                <img class="hand-icon" src="assets/img/hand.png" title="" alt="">
+            </h3>
+        </div>
+        <div class="container-description">
+            <p>Lorem ipsum dolor sit amet, <b class="dark">consectetur adipiscing elit</b>. Nam nec blandit felis.
+            Phasellus lacus elit, posuere id ante nec, viverra viverra tortor.
+            </p>
+        </div>
+
+        <div class="card-group">
+
+            <div class="container-card">
+                <div class="card-header">
+                    <ul class="inline">
+                        <li><img class="card-img" src="assets/img/Ellipse1.png" alt="" title=""></li>
+                        <li><h3 class="card-title">Lock API</h3></li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li class="card-topic">
+                            <h3 class="topic-title emphasis">Bloqueo de demostración</h3>
+                            <div class="emphasis-line"></div> <br>
+                            <p class="silver">Pruebe a activar y actualizar el bloqueo 
+                                Globetek en un teléfono compatible.
+                            </p>
+                        </li>
+                        <li class="card-topic">
+                            <h3 class="topic-title">Personaliza tu applicación de bloqueo</h3>
+                            <p class="silver">Puedes elegir personalizar tu applicación de bloqueo y API.</p>
+                        </li>
+                        <li class="card-topic">
+                            <h3 class="topic-title">Información de tu cuenta</h3>
+                            <p class="silver">Vea sus dispositivos activos, la lista de paquetes comprados, y el
+                                historial de activaciones usando el Lock API.
+                            </p>
+                        </li>
+                        <li class="card-topic">
+                            <h3 class="topic-title">KPI's</h3>
+                            <p class="silver"   >Sigue la evolución de los indicadores de forma sencilla y visual.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="container-card">
+                <div class="card-header">
+                    <ul class="inline">
+                        <li><img class="card-img" src="assets/img/Ellipse1.png" alt="" title=""></li>
+                        <li><h3 class="card-title">Cuentas y <br/> configuraciones</h3></li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li class="card-topic">
+                            <h3 class="topic-title">Configuraciones</h3>
+                            <p class="silver">Cambie y edite la información y la configuración de su cuenta</p>
+                        </li>
+                        <li class="card-topic">
+                            <h3 class="topic-title">Equipo</h3>
+                            <p class="silver">Cambia y edita los permisos y la configuración de tu cuenta para tu empresa</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="container-card">
+                <div class="card-header">
+                    <ul class="inline">
+                        <li><img class="card-img" src="assets/img/Ellipse1.png" alt="" title=""></li>
+                        <li><h3 class="card-title">Recursos <br/> adicionales</h3></li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li class="card-topic">
+                            <h3 class="topic-title">Aprenda como configurar su versión de prueba gratuita de Lock</h3>
+                            <p class="silver">Vea nuestro video aquí</p>
+                        </li>
+                        <li class="card-topic">
+                            <h3 class="topic-title">Opciones de Dispositivos</h3>
+                            <p class="silver">Vea nuestra lista completa de dispositivos compatibles aquí</p>
+                        </li>
+                        <li class="card-topic"> 
+                            <h3 class="topic-title">Contáctenos</h3>
+                            <p class="silver">Para preguntas o comentarios: support@globetek.zendesk.com</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card-space"></div>
+        </div>
+    </div>
+</body>
+</html>
