@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresa asociada</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dropdown.css">
+    <script type="text/javascript" src="assets/javascript/script.js"></script>
+</head>
+<body>
+
+    <header class="company-header">
+        <div class="company-menu"> 
+            <div class="company-picture">
+                <img class="company-svg" src="assets/img/Vector.svg" alt="" title="">
+            </div>
+            <div class="dropdown-text" onclick="toggle('.company-dropdown');">
+                <h2>Empresa asociada</h2>
+                <img id="arrow" src="assets/img/Arrow.svg" alt="" title="">
+            </div>
+        </div>
+        <div> 
+            <ul class="menu">
+                <li class="menu-item" onclick="toggle('.language-dropdown');">
+                    <ul class="menu"> 
+                        <li>
+                            <img class="flag-img" src="./assets/img/flag_spain.png" title="" alt="">
+                        </li>
+                        <li class="language-select">
+                            ES
+                            <img id="arrow" src="assets/img/Arrow.svg" alt="" title="">
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item"><a href="#">Ayuda</a></li>
+                <li class="menu-item"><a href="#">Logout</a></li>
+            </ul>
+        </div>
+        <div class="company-dropdown">
+            <ul>
+                <li class="li hover-effect"><img class="item-icon" src="assets/img/Ellipse.png" alt="" title=""><a href="#">Inicio</a></li>
+                <li class="li hover-effect"><img class="item-icon" src="assets/img/Ellipse.png" alt="" title=""><a href="#">Editar mi perfil</a></li>
+                <li class="li hover-effect"><img class="item-icon" src="assets/img/Ellipse.png" alt="" title=""><a href="#">Política de privacidad</a></li>
+                <li class="li hover-effect"><img class="item-icon" src="assets/img/Ellipse.png" alt="" title=""><a href="#">F.A.Q.</a></li>
+            </ul>
+            <div class="line-divisor"></div>
+            <ul class="company-info">
+                <li class="company-name"><h1><strong>Globe</strong>Tek</h1></li>
+                <li>Versíon v.0.001</li>
+                <li>Diciembre 18,2021</li>
+            </ul>
+        </div>
+    
+        <div class="language-dropdown">
+            <ul>
+                <li class="li hover-effect"><img class="item-icon" src="assets/img/flag_brasil.png" alt="" title=""><a href="#">PT</a></li>
+                <li class="li hover-effect"><img class="item-icon" src="assets/img/flag_spain.png" alt="" title=""><a href="#">ES</a></li>
+                <li class="li hover-effect"><img class="item-icon" src="assets/img/flag_usa.png" alt="" title=""><a href="#">EN</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+
+    <div class="container">
+
+
+        <p class="silver"> <span class="emphasis"> Tablero de Globetek </span> > Peersonaliza tu applicación de bloqueo</p>
+        <div class="lock-container inline margin-top-bottom">
+            <div><img src="assets/img/white-ellipse.png" title="" alt=""></div>
+            <div class="vertical-alignment margin-left">
+                <div class="emphasis">Lock API</div>
+                <div class="emphasis-line"></div>
+            </div>
+        </div>
+        <h2 class="container-title">Ajustes de Aplicacion</h2>
+        <br><br><br>
+        <div class="geral">
+            <div style="visibility: hidden; position: absolute; width: 0px; height: 0px;">
+            <svg xmlns="http://www.w3.org/2000/svg">
+                <symbol viewBox="0 0 24 24" id="expand-more">
+                <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/><path d="M0 0h24v24H0z" fill="none"/>
+                </symbol>
+                <symbol viewBox="0 0 24 24" id="close">
+                <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/><path d="M0 0h24v24H0z" fill="none"/>
+                </symbol>
+            </svg>
+            </div>
+    
+            <details open>
+                <summary>
+                    Logo de la aplicación
+                    <svg class="control-icon control-icon-expand" width="44" height="44" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
+                </summary>
+                <p>Puede cargar una imagen específica para mostrar como logotipo en la aplicación de sus clientes.</p> <br>
+                <div class="container-previa-logotipo">
+                    <div class="previa-logotipo"></div> 
+                    <p class="black-font">Ideal dimensions: 800 x 126 px</p>
+                </div>
+                <div class="small-button-container">
+                    <a href=""><button class="outline-button pink button-width-fill">Subir logotipo</button></a>
+                    <a href=""><button class="outline-button silver button-width-fill">Eliminar</button></a>
+                </div>
+                
+            </details>
+    
+            <details>
+                <summary>
+                    Número de Servicio al Cliente
+                    <svg class="control-icon control-icon-expand" width="44" height="44" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>   
+                </summary>
+                <hr>
+                <p>Ingresa el número de teléfono de tu servicio al cliente para que tus clientes de puedan contactar.</p>
+                <br>
+                <input class="text-box" placeholder="1142103878">
+                <br><br>
+                <p class="nota">Nota: solo números, sin espacios, guiones, paréntesis o '+'</p>
+            </details>
+
+            <details>
+                <summary>
+                    Números de teléfono en la lista blanca
+                    <svg class="control-icon control-icon-expand" width="44" height="44" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>   
+                </summary>
+                <hr>
+                <p>Ingresa el número de teléfono de tu servicio al cliente para que tus clientes de puedan contactar.</p>
+                <br>
+                <input class="text-box" placeholder="Ex: +55 (16) 9729-22403 ; +55 (16) 9729-22405">
+                <br><br>
+                <p class="nota">Nota: solo números, sin espacios, guiones, paréntesis o '+', separados por coma.</p>
+            </details>
+
+            <details>
+                <summary>
+                    Aplicaciones en la lista blanca
+                    <svg class="control-icon control-icon-expand" width="44" height="44" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>   
+                </summary>
+                <hr>
+                <p>Ingresa las aplicaciones que tus clientes tienen permitido usar, inclusive cuando el dispositivo está bloqueado.</p>
+                <br>
+                <input class="text-box" placeholder="com.facebook.orca ; com.whatsapp">
+                <br><br>
+                <p class="nota">Nota: separados por coma.</p>
+            </details>
+
+            <details>
+                <summary>
+                    URL de página de pagos
+                    <svg class="control-icon control-icon-expand" width="44" height="44" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>   
+                </summary>
+                <hr>
+                <p>Ingresa la URL de la página de pagos que quieres mostrar a tus clientes dentro de la aplicación Globetek. Globetek redirecionará el cliente a la URL ingresada aquí e incluirá el 'device tag' como un parámetro en la URL (e.g www.example.com/pay?deviceTag=&lt;deviceTag&gt;)</p>
+                <br>
+                <input class="text-box" placeholder="https://www.supersim.com.br/r/entrar">
+                <br><br>
+                    <a href=""><button class="medium-button-width outline-button silver">URL de pago de prueba</button></a>
+                <br><br>
+                <p class="nota">Nota: la URL de la página de pagos debe coincidir exactamente con la URL del navegador, por ejemplo, si ingresa example.com pero eso redirige a https://www.example.com en el navegador, la url no funcionará.</p>
+            </details>
+
+
+            <details>
+                <summary>
+                    URL de página de ayuda
+                    <svg class="control-icon control-icon-expand" width="44" height="44" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>   
+                </summary>
+                <hr>
+                <p>Ingresa la URL de la página de ayuda que quieres mostrar a tus clientes dentro de la aplicación Globetek. Globetek redirecionará el cliente a la URL ingresada aquí e incluirá el 'device tag' como un parámetro en  la URL (e.g www.example.com/help?deviceTag=&lt;deviceTag&gt;)</p>
+                <br>
+                <input class="text-box" placeholder="com.facebook.orca ; com.whatsapp">
+                <br><br>
+                    <a href=""><button class="medium-button-width outline-button silver">Prueba la URL de Ayuda</button></a>
+                <br><br>
+                <p class="nota">Nota: la URL de la página de ayuda debe coincidir exactamente con la URL del navegador, por ejemplo, si ingresa example.com pero eso redirige a https://www.example.com en el navegador, la url no funcionará.</p>
+            </details>
+
+            <details>
+                <summary>
+                    Números de emergencia adicionales
+                    <svg class="control-icon control-icon-expand" width="44" height="44" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>   
+                </summary>
+                <hr>
+                <strong>Números de emergencia predefinidos:192, 193, 190</strong> <br><br>
+                <p>Ingresa los números de teléfono de emergencias que tus clientes pueden marcar inclusive cuando el teléfono está bloqueado. Puedes ver los números predeterminados en la parte superior.</p>
+                <br>
+                <input class="text-box" placeholder="Ex: +55 (16) 9729-22403 ; +55 (16) 9729-22405">
+                <br><br>
+                <p class="nota">Nota: separados por coma.</p>
+            </details>
+
+            <details>
+                <summary>
+                    Requerir bloqueo SIM
+                    <svg class="control-icon control-icon-expand" width="44" height="44" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>   
+                </summary>
+                <hr>
+                <p>¿Debería bloquearse el dispositivo al retirar o cambiar la tarjeta SIM utilizada en el momento en que se activó la aplicación Globetek?</p>
+                <br>
+                <select class="select" name="" id="">
+                    <option value="Yes">Yes (default)</option>
+                    <option value="No">No</option>
+                    <option value="Yes">Yes (default)</option>
+                </select>
+            </details>
+
+            <br><br><br>
+            <h2 class="container-title">Ajustes de API</h2>
+            <br><br><br>
+
+            <details>
+                <summary>
+                    Su clave API es:
+                    <svg class="control-icon control-icon-expand" width="44" height="44" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>   
+                </summary>
+                <hr>
+                <input class="text-box" placeholder="wzPs3u81hnAcC5HRH2UZiVBbYKsdhuVF">
+                <br><br>
+                <a href=""><button class="medium-button-width outline-button silver">Restablece ty clave del API</button></a>
+            </details>
+
+            <details>
+                <summary>
+                    Direcciones IP en la lista blanca
+                    <svg class="control-icon control-icon-expand" width="44" height="44" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>   
+                </summary>
+                <hr>
+                <p>Lista las direcciones IP que tengan acceso al Lock API y a la herramienta de "Modifica tus dispositivos" en Dashboard.</p>
+                <br>
+                <input class="text-box" placeholder="wzPs3u81hnAcC5HRH2UZiVBbYKsdhuVF">
+                <br><br>
+                <p class="nota">Nota: separados por coma.</p>
+            </details>
+
+            <details>
+                <summary>
+                    URL del servidor para "Callback"
+                    <svg class="control-icon control-icon-expand" width="44" height="44" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>   
+                </summary>
+                <hr>
+                <p>Una URL para que Globetek envíe una notificacion cuando un dispositivo pase al estado 'active'. Globetek hará un POST al servidor con la información del dispositivo. El llamado estará firmado usando la tu llave del API Globetek por motivos de seguridad. Para más información visita nuestra página de Documentos.</p>
+                <br>
+                <input class="text-box" placeholder="wzPs3u81hnAcC5HRH2UZiVBbYKsdhuVF">
+                <br><br>
+                <a href=""><button class="medium-button-width outline-button silver">Prueba de la URL de “Callback”</button></a> <br><br>
+                <p class="nota">Nota: puedes probar el llamado a la URL usando el botón en el lado derecho.</p>
+            </details>
+        </div>
+    </div>
+    
+    <br><br><br>
+
+    <div class="ask-container">
+        <div class="adjust-container">
+            <p>¿Listo? ¿Desea actualizar la información de bloqueo?</p>
+        </div>
+        <div class="adjust-container">
+            <input type="submit" class="transparent-button" value="Por ahora no!">
+            <input type="submit" class="medium-button" value="Actualizar">
+        </div>
+    </div>
+
+</body>
+</html>

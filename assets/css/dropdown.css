@@ -1,0 +1,134 @@
+:root{
+    --white: #FFF;
+    --primary-background: #212121;
+    --secondary-background: #F5F5F5;
+    --silver: #E0E0E0;
+    --silver-hover: #EEE;
+    --primary-color: #EC407A;
+    --font: 'Poppins', sans-serif;
+    --font-primary-color: #212121;
+    --font-secondary-color: #757575;
+    --font-tertiary-color: #BDBDBD;
+    --green: #66BB6A;
+}
+
+/* RESPONSIVO */
+
+@media only screen and (max-width: 1000px) {
+    details {
+        margin: 0 auto;
+        position: relative;
+    }
+}
+/* RESPONSIVO */
+
+details {
+    background-color: var(--white); 
+    width: 75%;
+    min-height: 5px;
+    max-width: 900px;
+    padding: 30px 55px 30px 30px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+details + details {
+    margin-top: 20px;
+}
+
+details[open] {
+    min-height: 50px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
+}
+
+details p {
+    color: var(--font-secondary-color);
+    font-weight: 300;
+}
+
+summary {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+            align-items: center;
+    font-weight: 500;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+summary:focus {
+    outline: none;
+}
+
+summary::-webkit-details-marker {
+    display: none
+}
+
+.control-icon {
+    transform: rotate(-90deg);
+    fill: var(--primary-color);
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
+    pointer-events: none;
+    font-size: 1em;
+}
+
+.control-icon-close {
+    display: none;
+}
+
+details[open] .control-icon-close {
+    display: initial;
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
+}
+
+details[open] .control-icon-expand {
+    transform: rotate(0deg);
+}
+
+.space{
+    height: 200px;
+    width: 100%;
+}
+
+
+
+details hr{
+    margin: 30px -55px 30px -30px;
+    height: 1px;
+    border: solid 1px #E0E0E0;
+    background-color: #E0E0E0;
+}
+
+
+.ask-container{
+    height: 70px;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    background: var(--white);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    bottom: 0;
+}
+
+.adjust-container{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.container-previa-logotipo{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
