@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresa asociada</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dropdown.css">
+    <link rel="stylesheet" href="assets/css/info.css">
+    <script type="text/javascript" src="assets/javascript/script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+</head>
+<body>
+
+    <header class="company-header">
+        <div class="company-menu"> 
+            <div class="company-picture">
+                <img class="company-svg" src="assets/img/Vector.svg" alt="" title="">
+            </div>
+            <div class="dropdown-text" onclick="toggle('.company-dropdown');">
+                <h2>Empresa asociada</h2>
+                <img id="arrow" src="assets/img/Arrow.svg" alt="" title="">
+            </div>
+        </div>
+        <div> 
+            <ul class="menu">
+                <li class="menu-item" onclick="toggle('.language-dropdown');">
+                    <ul class="menu"> 
+                        <li>
+                            <img class="flag-img" src="./assets/img/flag_spain.png" title="" alt="">
+                        </li>
+                        <li class="language-select">
+                            ES
+                            <img id="arrow" src="assets/img/Arrow.svg" alt="" title="">
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item"><a href="#">Ayuda</a></li>
+                <li class="menu-item"><a href="#">Logout</a></li>
+            </ul>
+        </div>
+        <div class="company-dropdown">
+            <ul>
+                <li class="li hover-effect"><img class="item-icon" src="assets/img/Ellipse.png" alt="" title=""><a href="#">Inicio</a></li>
+                <li class="li hover-effect"><img class="item-icon" src="assets/img/Ellipse.png" alt="" title=""><a href="#">Editar mi perfil</a></li>
+                <li class="li hover-effect"><img class="item-icon" src="assets/img/Ellipse.png" alt="" title=""><a href="#">Política de privacidad</a></li>
+                <li class="li hover-effect"><img class="item-icon" src="assets/img/Ellipse.png" alt="" title=""><a href="#">F.A.Q.</a></li>
+            </ul>
+            <div class="line-divisor"></div>
+            <ul class="company-info">
+                <li class="company-name"><h1><strong>Globe</strong>Tek</h1></li>
+                <li>Versíon v.0.001</li>
+                <li>Diciembre 18,2021</li>
+            </ul>
+        </div>
+    
+        <div class="language-dropdown">
+            <ul>
+                <li class="li hover-effect"><img class="item-icon" src="assets/img/flag_brasil.png" alt="" title=""><a href="#">PT</a></li>
+                <li class="li hover-effect"><img class="item-icon" src="assets/img/flag_spain.png" alt="" title=""><a href="#">ES</a></li>
+                <li class="li hover-effect"><img class="item-icon" src="assets/img/flag_usa.png" alt="" title=""><a href="#">EN</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+
+    <div class="container">
+
+
+        <p class="silver"> <span class="emphasis"> Tablero de Globetek </span> &gt; Configuraciones</p>
+        <div class="lock-container inline margin-top-bottom">
+            <div><img src="assets/img/white-ellipse.png" title="" alt=""></div>
+            <div class="vertical-alignment margin-left">
+                <div class="emphasis large-container">Cuentas y configuraciones</div>
+                <div class="emphasis-line"></div>
+            </div>
+        </div>
+        <h2 class="container-title">Información de tu cuenta</h2>
+        <div class="small-info-container">
+            <div>
+                <i class="bi bi-phone pink-phone"></i>
+            </div>
+            <div>
+                <p class="strong-pink-label">219</p>
+                <p class="silver">Número total de activaciones</p>
+            </div>
+        </div>
+
+
+
+
+        <div>
+            <h3>Paquetes comprados</h3>
+            <div class="table-container">
+                <table class="custom-table">
+                    <thead class="table-header">
+                        <th>Carné de identidad</th>
+                        <th>Fecha</th>
+                        <th>Número de activaciones</th>
+                        <th>Cantidad</th>
+                        <th>Moneda</th>
+                        <th>ID de la transacción</th>
+                        <th>Devolución de cargo</th>
+                        <th>Reembolso</th>
+                    </thead>
+                    <tbody class="custom-tbody">
+                        <tr>
+                            <td>641</td>
+                            <td>Oct 28, 2019</td>
+                            <td>400</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+
+        <div>
+            <h3>Ordenes</h3>
+            <div class="table-container">
+                <table class="custom-table">
+                    <thead class="table-header">
+                        <th>Carné de identidad</th>
+                        <th>Device Id</th>
+                        <th>Tag de dispositivo</th>
+                        <th>Modelo de fabricante</th>
+                        <th>Estado del dispositivo</th>
+                        <th>Cantidad</th>
+                        <th>Término</th>
+                        <th>Created</th>
+                    </thead>
+                    <tbody class="custom-tbody">
+                        <tr>
+                            <td>474369</td>
+                            <td>836351</td>
+                            <td>DHXNHMN</td>
+                            <td>SAMSUNG SM-J500M</td>
+                            <td><strong class="inactive">inactive</strong></td>
+                            <td></td>
+                            <td></td>
+                            <td>Pct 12, 2021</td>
+                        </tr>
+                        <tr>
+                            <td>474369</td>
+                            <td>836351</td>
+                            <td>DHXNHMN</td>
+                            <td>SAMSUNG SM-J500M</td>
+                            <td><strong class="removable">removable</strong></td>
+                            <td></td>
+                            <td></td>
+                            <td>Pct 12, 2021</td>
+                        </tr>
+                        <tr>
+                            <td>474369</td>
+                            <td>836351</td>
+                            <td>DHXNHMN</td>
+                            <td>SAMSUNG SM-J500M</td>
+                            <td><strong class="status ready_for_activation">ready_for_activation</strong></td>
+                            <td></td>
+                            <td></td>
+                            <td>Pct 12, 2021</td>
+                        </tr>
+                        <tr>
+                            <td>474369</td>
+                            <td>836351</td>
+                            <td>DHXNHMN</td>
+                            <td>SAMSUNG SM-J500M</td>
+                            <td><strong class="status registered">registered</strong></td>
+                            <td></td>
+                            <td></td>
+                            <td>Pct 12, 2021</td>
+                        </tr>
+                        <tr>
+                            <td>474369</td>
+                            <td>836351</td>
+                            <td>DHXNHMN</td>
+                            <td>SAMSUNG SM-J500M</td>
+                            <td><strong class="status removable">removable</strong></td>
+                            <td></td>
+                            <td></td>
+                            <td>Pct 12, 2021</td>
+                        </tr>
+                        <tr>
+                            <td>474369</td>
+                            <td>836351</td>
+                            <td>DHXNHMN</td>
+                            <td>SAMSUNG SM-J500M</td>
+                            <td><strong class="status removable">removable</strong></td>
+                            <td></td>
+                            <td></td>
+                            <td>Pct 12, 2021</td>
+                        </tr>
+                        <tr>
+                            <td>474369</td>
+                            <td>836351</td>
+                            <td>DHXNHMN</td>
+                            <td>SAMSUNG SM-J500M</td>
+                            <td><strong class="status removable">removable</strong></td>
+                            <td></td>
+                            <td></td>
+                            <td>Pct 12, 2021</td>
+                        </tr>
+                        <tr>
+                            <td>474369</td>
+                            <td>836351</td>
+                            <td>DHXNHMN</td>
+                            <td>SAMSUNG SM-J500M</td>
+                            <td><strong class="status removable">removable</strong></td>
+                            <td></td>
+                            <td></td>
+                            <td>Pct 12, 2021</td>
+                        </tr>
+                        <tr>
+                            <td>474369</td>
+                            <td>836351</td>
+                            <td>DHXNHMN</td>
+                            <td>SAMSUNG SM-J500M</td>
+                            <td><strong class="status removable">removable</strong></td>
+                            <td></td>
+                            <td></td>
+                            <td>Pct 12, 2021</td>
+                        </tr>
+                        <tr>
+                            <td>474369</td>
+                            <td>836351</td>
+                            <td>DHXNHMN</td>
+                            <td>SAMSUNG SM-J500M</td>
+                            <td><strong class="status removable">removable</strong></td>
+                            <td></td>
+                            <td></td>
+                            <td>Pct 12, 2021</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+
+
+        <br><br><br>
+
+    </div>
+    
+    <br><br><br>
+
+</body>
+</html>
